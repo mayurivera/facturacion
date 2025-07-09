@@ -85,16 +85,35 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3.10 get-pip.py
 rm get-pip.py
 
-# 9. Instalar xades-bes-sri-ec globalmente sin entorno virtual
-echo "📂 Instalando xades-bes-sri-ec globalmente..."
-pip3 install --upgrade pip
-pip3 install git+https://github.com/alfredo138923/xades-bes-sri-ec.git
-
-# 10. Instalar php y módulo apache (si no están)
+# 9. Instalar php y módulo apache (si no están)
 echo "🐘 Instalando PHP y módulo Apache..."
 apt install -y php libapache2-mod-php php-mysql
 
-# 11. Configurar servicio SSH (activo por defecto)
+# 10. Crear carpeta facturacion si no existe
+mkdir -p /var/www/html/facturacion
+chown -R factura:factura /var/www/html/facturacion
+
+# 11. Clonar tu proyecto facturación desde GitHub (con usuario y contraseña directamente)
+echo "📥 Clonando repositorio del proyecto desde GitHub..."
+cd /var/www/html
+
+# ⚠️ Clonación con credenciales incrustadas (NO recomendado para producción)
+git clone https://mayurivera:MAYUmayu123*@github.com/mayurivera/facturacion.git
+
+# Cambiar propietario de la carpeta a usuario facturacion
+chown -R facturacion:facturacion /var/www/html/facturacion
+
+echo "✅ Proyecto clonado correctamente en /var/www/html/facturacion"
+
+
+# 12. Clonar e instalar xades-bes-sri-ec dentro de /var/www/html/facturacion
+echo "📂 Clonando e instalando xades-bes-sri-ec dentro de /var/www/html/facturacion..."
+cd /var/www/html/facturacion
+git clone https://github.com/alfredo138923/xades-bes-sri-ec.git
+cd xades-bes-sri-ec
+pip3 install .
+
+# 13. Configurar servicio SSH (activo por defecto)
 echo "🔐 Configurando SSH..."
 systemctl enable ssh
 systemctl start ssh
@@ -120,7 +139,19 @@ GRANT ALL PRIVILEGES ON *.* TO 'facturacion'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EOF
 
-# 15. Finalización
+# 15. Crear base de datos 'facturacion' desde archivo SQL
+echo "🛠️ Creando base de datos 'facturacion' desde archivo SQL con el usuario facturacion..."
+
+SQL_FILE="/var/www/html/facturacion/facturacion_03072025.sql"
+
+if [ -f "$SQL_FILE" ]; then
+    mysql -u facturacion -p'12345' < "$SQL_FILE"
+    echo "✅ Base de datos 'facturacion' creada correctamente."
+else
+    echo "❌ No se encontró el archivo SQL en $SQL_FILE"
+fi
+
+# 16. Finalización
 echo "✅ Instalación completada."
 echo "📝 Accesos:"
 echo " - SSH/SFTP usuario: facturacion, contraseña: 12345"
@@ -129,7 +160,7 @@ echo " - Proyecto en: /var/www/html/facturacion"
 echo " - Para usar python: ejecuta 'python' (alias para python3.10)"
 
 
-# 16. Crear script prueba.py para testear firma
+# 17. Crear script prueba.py para testear firma
 echo "📄 Creando script prueba.py para probar la firma electrónica..."
 cat << 'EOF' > /var/www/html/facturacion/prueba.py
 from xades_bes_sri_ec import xades
