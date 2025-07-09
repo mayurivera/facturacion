@@ -1,0 +1,5 @@
+{
+    "require": {
+        "insoutt/ec-validator": "^1.1"
+    }
+}

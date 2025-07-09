@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.1.0">
+  <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>EMPRESA DE OTRO S.A.</razonSocial>
+    <nombreComercial>COMERCIAL EJEMPLO</nombreComercial>
+    <ruc>1799999999001</ruc>
+    <claveAcceso>090720250117999999990011001002000000004000000001554828187</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>002</estab>
+    <ptoEmi>004</ptoEmi>
+    <secuencial>000000001</secuencial>
+    <dirMatriz>Av. 10 de Agosto N20-123 y Colón, Edificio Corporativo</dirMatriz>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>09/07/2025</fechaEmision>
+    <dirEstablecimiento>Calle 9na No. 505 y Av. Principal, Centro Comercial del Sur</dirEstablecimiento>
+    <obligadoContabilidad>NO</obligadoContabilidad>
+    <tipoIdentificacionComprador>01</tipoIdentificacionComprador>
+    <razonSocialComprador>Ferretería La Moderna</razonSocialComprador>
+    <identificacionComprador>1790076543001</identificacionComprador>
+    <direccionComprador>Av. Gran Colombia 123</direccionComprador>
+    <totalSinImpuestos>522.37</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>4</codigoPorcentaje>
+        <baseImponible>522.37</baseImponible>
+        <valor>78.36</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>600.73</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>600.73</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>PRD0066</codigoPrincipal>
+      <descripcion>Aceites Modelo 163</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>108.00</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>108.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15.00</tarifa>
+          <baseImponible>108.00</baseImponible>
+          <valor>16.20</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>PRD0069</codigoPrincipal>
+      <descripcion>Aceites Modelo 590</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>196.67</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>196.67</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15.00</tarifa>
+          <baseImponible>196.67</baseImponible>
+          <valor>29.50</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>PRD0008</codigoPrincipal>
+      <descripcion>Aditivos Modelo 266</descripcion>
+      <cantidad>2.00</cantidad>
+      <precioUnitario>108.85</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>217.70</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15.00</tarifa>
+          <baseImponible>217.70</baseImponible>
+          <valor>32.66</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="CORREO2">aaa@aaa.com</campoAdicional>
+    <campoAdicional nombre="Teléfono">0998777665</campoAdicional>
+    <campoAdicional nombre="Email">contacto@lamoderna.com</campoAdicional>
+  </infoAdicional>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature847426">
+<ds:SignedInfo Id="Signature-SignedInfo375220">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference Id="SignedPropertiesID517791" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature847426-SignedProperties579034">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>CYyWuRd3wWeuCTHAOy9q4voLPKk=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate235666">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>e6HedInirVRzgw0w4KyoLUOKSu8=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-855995" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>Y1Va9e2Xc/H7UetmRMAW7lIl4Ww=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+dM9eTnSVvgbKa27QLH604fuOw18/7m7iy4EymSockDfD1+VXWnga4ol3J4ynaQL1GdD0VpJPlS3d
+PN+Arqx6cXi3BhUGxLC1mRMSwZCfP+QyxhotoL+D7v4VYEuAHpclIiSJoATkkdjCmmOvkDem5Dwq
+0QTTzz1noeuD437kUrJVGIgFO9oz1NTtYp9IqcZB8aDvAQ4wj38/nD+2czDH41uVOBqJlAdt1/EQ
+56InvbMUPSPPdp1xHJMynM6tj4OSRchZGoi2ICrrR0gC5ibwDPlDmCgOomSG3K+U2hcais8QQPAJ
+wNwSgZV/vgM30L+/gioL2+5C0YdV9fVDy1yLpw==
+</ds:SignatureValue>
+<ds:KeyInfo Id="Certificate235666">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIJDzCCBvegAwIBAgIIXWigSE+LP/QwDQYJKoZIhvcNAQELBQAwgbgxCzAJBgNVBAYTAkVTMUQw
+QgYDVQQHDDtCYXJjZWxvbmEgKHNlZSBjdXJyZW50IGFkZHJlc3MgYXQgd3d3LnVhbmF0YWNhLmNv
+bS9hZGRyZXNzKTEWMBQGA1UECgwNVUFOQVRBQ0EgUy5BLjEVMBMGA1UECwwMVFNQLVVBTkFUQUNB
+MRowGAYDVQQDDBFVQU5BVEFDQSBDQTIgMjAxNjEYMBYGA1UEYQwPVkFURVMtQTY2NzIxNDk5MB4X
+DTIyMTIxMDIwNTQwMFoXDTI3MTIwOTIwNTQwMFowgaAxCzAJBgNVBAYTAkVDMRYwFAYDVQQEDA1G
+QUpBUkRPIEFHSUxBMRgwFgYDVQQqDA9MSUxJQU5BIExJWkJFVEgxGTAXBgNVBAUTEElEQ0VDLTEx
+MDQ4ODU2OTIxJjAkBgNVBAMMHUxJTElBTkEgTElaQkVUSCBGQUpBUkRPIEFHSUxBMRwwGgYDVQRh
+DBNUSU5FQy0xMTA0ODg1NjkyMDAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn0NL
+42LlN58Tg6Q2DVa3fwbXjWFN7jJj5Nu8LqM3IdzJYTdVDlOjS891PCKM4W9H0OXjyp9Ct1DSg4YM
+t6IFRPcVZpRg0XMw3mLEvKnLcygqGZsdQTrYEECSsOgN7n0kkEgBxZFKq8EzXh3flUzyZpE6qB0s
+WLw/PmqdMYUT6FtV0XV+5eJz5E7zBW6qZYfFvmsKI9WFoU7yI2WwLOMyCqLZSKH0Ba0uJ2MgQvHO
+fWTaw6r7m7QgiuREEVeKPj8yuOGT2QunDn/jmqXZGwGxlZe3h86ORSk+xcRWLAIotZq2t8YgEl34
+N2nqIGsnpLFMU9LboHMxwrBlHwil5RxzYQIDAQABo4IEMTCCBC0wGwYLKwYBBAGC8TZmAwEEDAwK
+MTEwNDg4NTY5MjAeBgsrBgEEAYLxNmYDCwQPDA0xMTA0ODg1NjkyMDAxMIHXBggrBgEFBQcBAQSB
+yjCBxzBVBggrBgEFBQcwAoZJaHR0cDovL3d3dy51YW5hdGFjYS5jb20vcHVibGljL2Rvd25sb2Fk
+L3RzcF9jZXJ0aWZpY2F0ZXMvc3Vib3JkaW5hdGUxLmNydDA2BggrBgEFBQcwAYYqaHR0cDovL29j
+c3AxLnVhbmF0YWNhLmNvbS9wdWJsaWMvcGtpL29jc3AvMDYGCCsGAQUFBzABhipodHRwOi8vb2Nz
+cDIudWFuYXRhY2EuY29tL3B1YmxpYy9wa2kvb2NzcC8wHQYDVR0OBBYEFDrZzwI1XuJ9DJV3MRJR
+DVrolzNUMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUfVfnYHPOB0ap4qNo8OERsnSSc/0wgZkG
+A1UdIASBkTCBjjCBiwYMKwYBBAGC8TZmAgEBMHswNwYIKwYBBQUHAgEWK2h0dHBzOi8vd3d3LnVh
+bmF0YWNhLmNvbS9wdWJsaWMvcGtpL2RwYy1lYy8wQAYIKwYBBQUHAgIwNAwyQ0VSVElGSUNBRE8g
+REUgUEVSU09OQSBOQVRVUkFMIE8gRklTSUNBIEVOIEFSQ0hJVk8wgY8GA1UdHwSBhzCBhDBAoD6g
+PIY6aHR0cDovL2NybDEudWFuYXRhY2EuY29tL3B1YmxpYy9wa2kvY3JsL0NBMnN1Ym9yZGluYWRh
+LmNybDBAoD6gPIY6aHR0cDovL2NybDIudWFuYXRhY2EuY29tL3B1YmxpYy9wa2kvY3JsL0NBMnN1
+Ym9yZGluYWRhLmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUF
+BwMEMIIBZwYDVR0RBIIBXjCCAVqBGm1hcmNvY2FzdGlsbG84MDJAZ21haWwuY29toBsGCysGAQQB
+gvE2ZgMBoAwMCjExMDQ4ODU2OTKgIAYLKwYBBAGC8TZmAwKgEQwPTElMSUFOQSBMSVpCRVRIoBgG
+CysGAQQBgvE2ZgMDoAkMB0ZBSkFSRE+gFgYLKwYBBAGC8TZmAwSgBwwFQUdJTEGgGAYLKwYBBAGC
+8TZmAwegCQwHVFVNQkFDT6AfBgsrBgEEAYLxNmYDCKAQDA4wMDU5Mzk4MjMyMTgyMqAWBgsrBgEE
+AYLxNmYDCaAHDAVRVUlUT6AeBgsrBgEEAYLxNmYDC6APDA0xMTA0ODg1NjkyMDAxoBMGCysGAQQB
+gvE2ZgMMoAQMAkVDoCkGCysGAQQBgvE2ZgMyoBoMGFBFUlNPTkEgTkFUVVJBTCBPIEZJU0lDQaAY
+BgsrBgEEAYLxNmYDM6AJDAdBUkNISVZPMA0GCSqGSIb3DQEBCwUAA4ICAQBacbRTC452Ytx4moAV
+LP8oKNyWCs0U9U++dKtXcWelia5Z829F+UxHWSP5EUbkr/kcpwlJGhyzQi26LOHyyjOtOZgAg6nu
+9BW1NtJgdkYduIVqSfPy1yH+5cJCZIUAzeJrFdHd50L+dn+wL+GthMC8OdbCju75/d2yFp96DxMz
+2kZuw3BPFFNSJ9ceEytNwJAJsK+bRmQjFxEn6zUQDYf8WlAkKNHfJldbYdPZXRnzfTnQ2UYRLw+d
+U+ByYJ4ZDPAjEfFUeWqVYUDud3mSpPAK2PWwsxDcHJ3qYCDpO7q8AMhTLxyyaokieenWwXx/7T+A
+UcP82IH7/b2QpU7w/6ysObi8uO3k+IVlLIso2dKh1LVqJNerbah0XI0CW5ApQVFFyTlo0iEQACaq
+wBli7crWA596PWz5KDFCSV85zA9A5EO8LbdLuDeOAg00H8FTcl0OO+qmXRyc7TwQcLHf2E3E5Ec/
+02NyGdnHYro7YdXTUe0AOWQ3X2ZvU4qdmCUXGUF87P6YZ79XoS+bRPRiEeHVxSDBNY5fErF++r5Q
+P+O/2VrB6qBZQdnHYy3PM60ATxGzTAXHyCNfZdWBmr3YzTWCFMp3q7bI3OqBTXQv0sYeIkS+Q0BP
+EdRbKJQopu2oXiHTcrQJFlq/SPL1zpK1D9t+ugFeeWuqSQ3rO3wogR7n3w==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+n0NL42LlN58Tg6Q2DVa3fwbXjWFN7jJj5Nu8LqM3IdzJYTdVDlOjS891PCKM4W9H0OXjyp9Ct1DS
+g4YMt6IFRPcVZpRg0XMw3mLEvKnLcygqGZsdQTrYEECSsOgN7n0kkEgBxZFKq8EzXh3flUzyZpE6
+qB0sWLw/PmqdMYUT6FtV0XV+5eJz5E7zBW6qZYfFvmsKI9WFoU7yI2WwLOMyCqLZSKH0Ba0uJ2Mg
+QvHOfWTaw6r7m7QgiuREEVeKPj8yuOGT2QunDn/jmqXZGwGxlZe3h86ORSk+xcRWLAIotZq2t8Yg
+El34N2nqIGsnpLFMU9LboHMxwrBlHwil5RxzYQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Signature847426-Object607377"><etsi:QualifyingProperties Target="#Signature847426"><etsi:SignedProperties Id="Signature847426-SignedProperties579034"><etsi:SignedSignatureProperties><etsi:SigningTime>2025-07-09T00:50:57Z</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>tLkurcx2El8TFJCl1ZN/TBKUc7M=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>C=ES,L=Barcelona (see current address at www.uanataca.com/address),O=UANATACA S.A.,OU=TSP-UANATACA,CN=UANATACA CA2 2016,organizationIdentifier=VATES-A66721499</ds:X509IssuerName><ds:X509SerialNumber>6730805875537821684</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-855995"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>

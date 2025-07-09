@@ -1,0 +1,76 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "22277d81617e68e3b49f9c2f40722ee0",
+    "packages": [
+        {
+            "name": "insoutt/ec-validator",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/insoutt/ec-validator.git",
+                "reference": "a32dcc3151e8b6a6391610c4e4655f949b7988e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/insoutt/ec-validator/zipball/a32dcc3151e8b6a6391610c4e4655f949b7988e3",
+                "reference": "a32dcc3151e8b6a6391610c4e4655f949b7988e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.21.1",
+                "phpunit/phpunit": "^9.0|^10.3.2",
+                "spatie/ray": "^1.28"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Insoutt\\EcValidator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "insoutt",
+                    "email": "hi@elvisfernando.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Validador de Cedula, RUC y mas datos de Ecuador",
+            "homepage": "https://github.com/insoutt/ec-validator",
+            "keywords": [
+                "ec-validator",
+                "insoutt"
+            ],
+            "support": {
+                "issues": "https://github.com/insoutt/ec-validator/issues",
+                "source": "https://github.com/insoutt/ec-validator/tree/1.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/insoutt",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-26T06:39:45+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

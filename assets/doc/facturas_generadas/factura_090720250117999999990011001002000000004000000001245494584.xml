@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.1.0">
+  <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>EMPRESA DE OTRO S.A.</razonSocial>
+    <nombreComercial>COMERCIAL EJEMPLO</nombreComercial>
+    <ruc>1799999999001</ruc>
+    <claveAcceso>090720250117999999990011001002000000004000000001245494584</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>002</estab>
+    <ptoEmi>004</ptoEmi>
+    <secuencial>000000001</secuencial>
+    <dirMatriz>Av. 10 de Agosto N20-123 y Colón, Edificio Corporativo</dirMatriz>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>09/07/2025</fechaEmision>
+    <dirEstablecimiento>Calle 9na No. 505 y Av. Principal, Centro Comercial del Sur</dirEstablecimiento>
+    <obligadoContabilidad>NO</obligadoContabilidad>
+    <tipoIdentificacionComprador>01</tipoIdentificacionComprador>
+    <razonSocialComprador>Ferretería La Moderna</razonSocialComprador>
+    <identificacionComprador>1790076543001</identificacionComprador>
+    <direccionComprador>Av. Gran Colombia 123</direccionComprador>
+    <totalSinImpuestos>522.37</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>4</codigoPorcentaje>
+        <baseImponible>522.37</baseImponible>
+        <valor>78.36</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>600.73</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>600.73</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>PRD0066</codigoPrincipal>
+      <descripcion>Aceites Modelo 163</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>108.00</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>108.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15.00</tarifa>
+          <baseImponible>108.00</baseImponible>
+          <valor>16.20</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>PRD0069</codigoPrincipal>
+      <descripcion>Aceites Modelo 590</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>196.67</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>196.67</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15.00</tarifa>
+          <baseImponible>196.67</baseImponible>
+          <valor>29.50</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>PRD0008</codigoPrincipal>
+      <descripcion>Aditivos Modelo 266</descripcion>
+      <cantidad>2.00</cantidad>
+      <precioUnitario>108.85</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>217.70</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15.00</tarifa>
+          <baseImponible>217.70</baseImponible>
+          <valor>32.66</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="CORREO2">aaa@aaa.com</campoAdicional>
+    <campoAdicional nombre="Teléfono">0998777665</campoAdicional>
+    <campoAdicional nombre="Email">contacto@lamoderna.com</campoAdicional>
+  </infoAdicional>
+</factura>
